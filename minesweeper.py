@@ -262,8 +262,8 @@ def infer_new_sentences(self):
         and self.moves_made, but should not modify any of those values.
         """
         for safe in self.safes:
-        if safe not in self.moves_made:
-            return safe
+            if safe not in self.moves_made:
+                return safe
     return None
 
     def make_random_move(self):
